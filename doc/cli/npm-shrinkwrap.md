@@ -82,16 +82,16 @@ This generates `npm-shrinkwrap.json`, which will look something like this:
 
     {
       "name": "A",
-      "version": "1.1.0",
+      "version": "0.1.0",
       "dependencies": {
         "B": {
-          "version": "1.0.1",
-          "from": "B@^1.0.0",
-          "resolved": "https://registry.npmjs.org/B/-/B-1.0.1.tgz",
+          "version": "0.0.1",
+          "from": "B@^0.0.1",
+          "resolved": "https://registry.npmjs.org/B/-/B-0.0.1.tgz",
           "dependencies": {
             "C": {
-              "version": "1.0.1",
-              "from": "org/C#v1.0.1",
+              "version": "0.0.1",
+              "from": "org/C#v0.0.1",
               "resolved": "git://github.com/org/C.git#5c380ae319fc4efe9e7f2d9c78b0faa588fd99b4"
             }
           }
@@ -107,7 +107,7 @@ reproducing the structure described in the file, using the specific files
 referenced in "resolved" if available, falling back to normal package
 resolution using "version" if one isn't.
 
-2. The tree is walked and any missing dependencies are installed in the usual fasion.
+2. The tree is walked and any missing dependencies are installed in the usual fashion.
 
 ### Using shrinkwrapped packages
 
